@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common Colors -->
+    <color name="black">#FF000000</color>
+    <color name="black_shadow">#505050</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- Text Colors -->
+    <color name="white_dark">#F4F4F4</color>
+    <color name="black_light">#494949</color>
+
+
+    <!-- Light Mode Colors -->
+    <color name="primary_light">#005555</color>
+    <color name="background_light">#FFFFFF</color>
+    <color name="text_primary_light">#222222</color>
+    <color name="text_secondary_light">#8B8C92</color>
+    <color name="accent_light">#A1E3D8</color>
+    <color name="shape_upper">#30AADD</color>
+    <color name="shape_lower">#F7FF93</color>
+
+    <!-- Dark Mode Colors (Based on Light Mode) -->
+    <color name="primary_dark">#00A8A8</color> <!-- Light এর #005555 কে ব্রাইটার করেছি -->
+    <color name="background_dark">#121212</color> <!-- Pure Black Shade -->
+    <color name="text_primary_dark">#EAEAEA</color> <!-- Light এর #222222 এর ইনভার্স -->
+    <color name="text_secondary_dark">#B0B3B8</color> <!-- Light এর #8B8C92 কে Soft Gray করেছি -->
+    <color name="accent_dark">#68D6C5</color> <!-- Light এর #A1E3D8 কে একটু Deep করেছি -->
+    <color name="shape_upper_dark">#207899</color> <!-- Light এর #30AADD কে Dark Variant -->
+    <color name="shape_lower_dark">#B6C700</color>
+    <color name="yellow_border">#FFC85E</color> <!-- Light এর #F7FF93 কে Dark Variant -->
+
+
+    <!-- Settings Activity Specific Colors -->
+
+    <!-- Primary & Background -->
+    <color name="primary_color">#2196F3</color>
+    <color name="background_color">#F5F5F5</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- Icon Colors -->
+    <color name="icon_color">#616161</color>
+
+    <!-- Status & Action Colors -->
+    <color name="error_color">#F44336</color>
+
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_award_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:fontFamily="@font/arial_regular"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_award_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/arial_regular"
+        android:textColor="@color/black_shadow"
+        android:justificationMode="inter_word"
+        android:textAlignment="viewStart"
+        android:textSize="7sp" />
+
+    <TextView
+        android:id="@+id/tv_award_received"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/arial_regular"
+        android:textColor="@color/black_shadow"
+        android:textSize="7sp" />
+
+
+</LinearLayout>

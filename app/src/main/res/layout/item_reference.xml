@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/tv_reference_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/arial_regular"
+        android:textColor="#333333"
+        android:maxLines="1"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_reference_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black_shadow"
+        android:textSize="7sp"
+        android:fontFamily="@font/arial_regular"
+        android:maxLines="1"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_reference_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black_shadow"
+        android:fontFamily="@font/arial_regular"
+        android:textSize="7sp" />
+</LinearLayout>

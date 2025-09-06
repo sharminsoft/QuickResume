@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="410dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                >
+                <TextView
+                    android:id="@+id/jack_resume_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:text="Jack William"
+                    android:fontFamily="@font/arial_bold"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/jack_resume_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="SOFTWARE ENGINEERING"
+                    android:textStyle="normal"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="5sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/black"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/jack_resume_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="171/2, West Sherapara, Mirpur -1216"
+                        android:textColor="@color/black"
+                        android:textSize="6dp"
+                        android:fontFamily="@font/arial_regular"
+                        android:layout_marginStart="3dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/black"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/jack_resume_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+8801798-487709"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/arial_regular"
+                        android:textSize="6dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/black"
+                        android:src="@drawable/ic_email" />
+
+                    <TextView
+                        android:id="@+id/jack_resume_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mahiuddin834@gmail.com"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/arial_regular"
+                        android:textSize="6dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        android:src="@drawable/web_ic" />
+
+                    <TextView
+                        android:id="@+id/jack_resume_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="www.website.com"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/arial_regular"
+                        android:textSize="6dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/jack_resume_certifications_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CERTIFICATIONS"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/arial_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jack_resume_certifications_recyclearview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/jack_resume_expertise_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SKILLS"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jack_resume_expertise_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/jack_resume_language_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LANGUAGES"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/arial_bold"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jack_resume_language_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/jack_resume_award_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACHIVEMENTS"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/arial_bold"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jack_resume_award_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="CAREER OBJECTIVE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jack_resume_profile_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/arial_regular"
+                    android:justificationMode="inter_word"
+                    android:textAlignment="viewStart"
+                    android:text=""
+                    android:textColor="@color/black_shadow"
+                    android:textSize="6sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/jack_resume_workExperience_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="EXPERIENCE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jack_resume_workExperience_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/jack_resume_education_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="EDUCATION"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jack_resume_education_recyclearview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/jack_resume_project_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="PROJECTS"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jack_resume_project_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/jack_resume_extra_curricular_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="EXTRA CURRICULAR ACTIVITIES"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jack_resume_extra_curricular_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/jack_resume_references_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="REFFERANCE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jack_resume_references_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

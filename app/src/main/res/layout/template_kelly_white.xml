@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="410dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <View
+                android:layout_width="136.7dp"
+                android:layout_height="150dp"
+                android:background="#26211D"
+                android:layout_alignParentEnd="true"
+                />
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-30dp"
+                android:paddingStart="40dp"
+                android:background="#FF9100"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/kelly_circleImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kelly_circleImageView"
+                app:layout_constraintTop_toTopOf="@+id/kelly_circleImageView">
+
+                <TextView
+                    android:id="@+id/kelly_resume_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KELLY WHITE"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kelly_resume_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WEB DEVELOPR"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/arial_regular"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/kelly_circleImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/profile_png"
+                app:civ_border_color="#26211D"
+                app:civ_border_width="5dp"
+                app:civ_circle_background_color="#FF9100"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/constraintLayout"
+                android:weightSum="3"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:layout_marginTop="10dp"
+                    android:paddingEnd="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/kelly_resume_education_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="EDUCATION"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="20dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:textStyle="bold"
+                        android:background="#FF9100"
+                        android:textColor="@color/black"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/kelly_resume_education_recyclearview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/kelly_resume_workExperience_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="EXPERIENCE"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="20dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:textStyle="bold"
+                        android:background="#FF9100"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/kelly_resume_workExperience_recyclearview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/kelly_resume_project_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="PROJECTS"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="20dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:textStyle="bold"
+                        android:background="#FF9100"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/kelly_resume_project_recyclearview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/kelly_resume_extra_curricular_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="EXTRA CURRICULAR ACTIVITIES"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="20dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:textStyle="bold"
+                        android:background="#FF9100"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/kelly_resume_extra_curricular_recyclearview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/kelly_resume_references_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="REFERENCES"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="20dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:textStyle="bold"
+                        android:background="#FF9100"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/kelly_resume_references_recyclearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="#26211D"
+                    android:paddingStart="8dp"
+                    android:paddingBottom="30dp"
+                    android:paddingEnd="5dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="ABOUT ME"
+                        android:fontFamily="@font/arial_bold"
+                        android:textSize="10sp"
+                        android:background="@drawable/text_border_shape"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/kelly_resume_profile_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/arial_regular"
+                        android:textStyle="normal"
+                        android:justificationMode="inter_word"
+                        android:textAlignment="viewStart"
+                        android:textSize="8sp"
+                        android:layout_marginTop="5dp"
+                        android:text=""/>
+
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="CONTACT ME"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/arial_bold"
+                        android:background="@drawable/text_border_shape"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="15dp"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:padding="2dp"
+                            app:tint="@color/white"
+                            android:src="@drawable/ic_location" />
+
+                        <TextView
+                            android:id="@+id/kelly_resume_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/arial_regular"
+                            android:textSize="8dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:padding="2dp"
+                            app:tint="@color/white"
+                            android:src="@drawable/ic_phone" />
+
+                        <TextView
+                            android:id="@+id/kelly_resume_phone_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+8801798-487709"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/arial_regular"
+                            android:textSize="8dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            app:tint="@color/white"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_email" />
+
+                        <TextView
+                            android:id="@+id/kelly_resume_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="mahiuddin834@gmail.com"
+                            android:fontFamily="@font/arial_regular"
+                            android:textColor="@color/white"
+                            android:textSize="8dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            app:tint="@color/white"
+                            android:padding="2dp"
+                            android:src="@drawable/web_ic" />
+
+                        <TextView
+                            android:id="@+id/kelly_resume_website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="www.website.com"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/arial_regular"
+                            android:textSize="8dp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/kelly_resume_expertise_txt"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="SKILLS"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/arial_bold"
+                        android:background="@drawable/text_border_shape"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/kelly_resume_expertise_recyclearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/kelly_resume_language_txt"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="LANGUAGES"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/arial_bold"
+                        android:background="@drawable/text_border_shape"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/kelly_resume_language_recyclearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/kelly_resume_certification_txt"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="CERTIFICATIONS"
+                        android:textSize="10sp"
+                        android:background="@drawable/text_border_shape"
+                        android:gravity="center"
+                        android:fontFamily="@font/arial_bold"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/kelly_resume_certifications_recyclearview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/kelly_resume_award_txt"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="ACHIVEMENTS"
+                        android:textSize="10sp"
+                        android:background="@drawable/text_border_shape"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/kelly_resume_awards_recyclearview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

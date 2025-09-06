@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    tools:context=".Activitys.ResumeBuildingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary_light"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:padding="5dp"
+                    android:src="@drawable/back_btn"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/share_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_share_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Resume Preview"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/main_template_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/template_olivia_wilson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_olivia_wilson"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_lizzie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_lizzie"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_jack_william"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_jack_william"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_david_anderson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_david_anderson"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/template_dyrection_pesh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_dyrection_pesh"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/template_jennifer_anderson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_jennifer_anderson"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_karen_richards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_karen_richards"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_kelly_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_kelly_white"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_khalil_richardson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_khalil_richardson"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_laura_parker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_laura_parker"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_noel_taylor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_noel_taylor"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_samuel_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_samuel_white"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_thomas_smith"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_thomas_smith"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/template_usman_ali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/template_usman_ali"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

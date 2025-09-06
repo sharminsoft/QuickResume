@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="410dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/thomas_border"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/thomas_profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_img" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:layout_width="96dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:background="@drawable/thomas_txt_border"
+                            android:gravity="center"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:fontFamily="@font/arial_bold"
+                            android:text="CONTACT ME"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="end"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="92dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="vertical"
+                                android:gravity="end"
+
+                                >
+
+
+                                <TextView
+                                    android:id="@+id/thomas_resume_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:gravity="end"
+                                    android:fontFamily="@font/arial_regular"
+                                    android:text="171/2, West Sherapara, Mirpur -1216"
+                                    android:textColor="@color/black"
+                                    android:textSize="7dp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/thomas_resume_phone_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:fontFamily="@font/arial_regular"
+                                    android:gravity="end"
+                                    android:text="+8801798-487709"
+                                    android:textColor="@color/black"
+                                    android:textSize="7dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/thomas_resume_email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:gravity="end"
+                                    android:fontFamily="@font/arial_regular"
+                                    android:layout_marginTop="3dp"
+                                    android:text="mahiuddin834@gmail.com"
+                                    android:textColor="@color/black"
+                                    android:textSize="7dp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/thomas_resume_website"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:gravity="end"
+                                    android:text="www.website.com"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/arial_regular"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="7dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="60dp"
+                                android:background="#959595"
+                                android:layout_marginStart="5dp"
+                                android:layout_gravity="center"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/thomas_resume_certifications_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/thomas_txt_border"
+                        android:gravity="center"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:text="CERTIFICATIONS"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/thomas_resume_certifications_recyclearview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/thomas_resume_expertise_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/thomas_txt_border"
+                        android:gravity="center"
+                        android:paddingTop="3dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:paddingBottom="3dp"
+                        android:text="SKILLS"
+                        android:textColor="@color/black"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/thomas_resume_expertise_recyclearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/thomas_resume_language_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/thomas_txt_border"
+                        android:gravity="center"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:text="LANGUAGES"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/thomas_resume_language_recyclearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="5dp" />
+
+
+                    <TextView
+                        android:id="@+id/thomas_resume_awards_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/thomas_txt_border"
+                        android:gravity="center"
+                        android:paddingTop="3dp"
+                        android:fontFamily="@font/arial_bold"
+                        android:paddingBottom="3dp"
+                        android:text="ACHIVEMENTS"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/thomas_resume_awards_recyclearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="5dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/thomas_resume_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="SAMUEL WHITE"
+                        android:textColor="#9473FA"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/arial_bold"
+                        android:textAlignment="textStart"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/thomas_resume_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:text="Graphic Designer"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/arial_regular"
+                        android:textSize="12sp"
+                        android:layout_gravity="start"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/side_curve"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABOUT ME"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/arial_bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="3dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/thomas_resume_profile_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:justificationMode="inter_word"
+                        android:textAlignment="viewStart"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/arial_regular"
+                        android:textStyle="normal"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black_shadow"
+                        />
+
+                    <TextView
+                        android:id="@+id/thomas_resume_work_experience_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXPERIENCE"
+                        android:fontFamily="@font/arial_bold"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10sp"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/thomas_resume_workExperience_recyclearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/thomas_resume_project_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PROJECTS"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/arial_bold"
+                        android:layout_marginTop="10sp"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/thomas_resume_project_recyclearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/thomas_resume_extra_curricular_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXTRA CURRICULAR ACTIVITIES"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/arial_bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10sp"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/thomas_resume_extra_curricular_recyclearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/thomas_resume_education_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EDUCATION"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/arial_bold"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10sp"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/thomas_resume_education_recyclearview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/side_curve"
+                        />
+
+                    <TextView
+                        android:id="@+id/thomas_resume_references_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REFFERANCE"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/arial_bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10sp"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/thomas_resume_references_recyclearView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

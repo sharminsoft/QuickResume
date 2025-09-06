@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="410dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4C5868"
+            android:orientation="vertical"
+            android:paddingTop="25dp"
+            android:paddingBottom="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/khalil_circleImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/khalil_resume_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KHALIL RICHARDSON"
+                    android:fontFamily="@font/arial_bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/khalil_resume_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GRAPHIC DESIGNER"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/arial_regular"
+                    android:textSize="8sp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white" />
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="CONTACT"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/white"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/khalil_resume_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:fontFamily="@font/arial_regular"
+                        android:textColor="@color/white"
+                        android:textSize="8dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/white"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/khalil_resume_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+8801798-487709"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/arial_regular"
+                        android:textSize="8dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        app:tint="@color/white"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_email" />
+
+                    <TextView
+                        android:id="@+id/khalil_resume_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mahiuddin834@gmail.com"
+                        android:fontFamily="@font/arial_regular"
+                        android:textColor="@color/white"
+                        android:textSize="8dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        app:tint="@color/white"
+                        android:padding="2dp"
+                        android:src="@drawable/web_ic" />
+
+                    <TextView
+                        android:id="@+id/khalil_resume_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="www.website.com"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/arial_regular"
+                        android:textSize="8dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/khalil_resume_expertise_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="SKILLS"
+                    android:fontFamily="@font/arial_bold"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/khalil_resume_expertise_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/khalil_resume_language_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/arial_bold"
+                    android:text="LANGUAGES"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/khalil_resume_language_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/khalil_resume_certifications_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="CERTIFICATIONS"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/khalil_resume_certifications_recyclearview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/khalil_resume_awards_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ACHIVEMENTS"
+                    android:fontFamily="@font/arial_bold"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/khalil_resume_awards_recyclearview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/khalil_resume_about_me_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT ME"
+                android:textColor="@color/black"
+                android:background="#FBE9A1"
+                android:padding="2dp"
+                android:fontFamily="@font/arial_bold"
+                android:layout_marginEnd="30dp"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/khalil_resume_profile_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:justificationMode="inter_word"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black_shadow"
+                android:fontFamily="@font/arial_regular"
+                android:textSize="7sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/khalil_resume_workExperience_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WORK EXPERIENCE"
+                android:textColor="@color/black"
+                android:background="#FBE9A1"
+                android:layout_marginTop="13dp"
+                android:padding="2dp"
+                android:fontFamily="@font/arial_bold"
+                android:layout_marginEnd="30dp"
+                android:textSize="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/khalil_resume_workExperience_recyclearview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/khalil_resume_education_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="EDUCATION"
+                android:textColor="@color/black"
+                android:background="#FBE9A1"
+                android:fontFamily="@font/arial_bold"
+                android:padding="2dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/khalil_resume_education_recyclearview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/khalil_resume_project_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="PROJECTS"
+                android:textColor="@color/black"
+                android:background="#FBE9A1"
+                android:fontFamily="@font/arial_bold"
+                android:padding="2dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/khalil_resume_project_recyclearview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/khalil_resume_extra_curricular_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="EXTRA CURRICULAR ACTIVITIES"
+                android:textColor="@color/black"
+                android:background="#FBE9A1"
+                android:fontFamily="@font/arial_bold"
+                android:padding="2dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/khalil_resume_extra_curricular_recyclearview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                />
+
+            <TextView
+                android:id="@+id/khalil_resume_references_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="REFERENCES"
+                android:textColor="@color/black"
+                android:background="#FBE9A1"
+                android:padding="2dp"
+                android:fontFamily="@font/arial_bold"
+                android:layout_marginEnd="30dp"
+                android:textSize="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/khalil_resume_references_recyclearView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

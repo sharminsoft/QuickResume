@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="410dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="25dp"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/jennifer_resume_profile_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_img"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/jennifer_bg"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="20dp"
+                >
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Contact"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="10sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/white"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/jennifer_resume_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:fontFamily="@font/arial_regular"
+                        android:textColor="@color/white"
+                        android:textSize="8dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/white"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/jennifer_resume_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+8801798-487709"
+                        android:fontFamily="@font/arial_regular"
+                        android:textColor="@color/white"
+                        android:textSize="8dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        app:tint="@color/white"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_email" />
+
+                    <TextView
+                        android:id="@+id/jennifer_resume_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mahiuddin834@gmail.com"
+                        android:fontFamily="@font/arial_regular"
+                        android:textColor="@color/white"
+                        android:textSize="8dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        app:tint="@color/white"
+                        android:padding="2dp"
+                        android:src="@drawable/web_ic" />
+
+                    <TextView
+                        android:id="@+id/jennifer_resume_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="www.website.com"
+                        android:textColor="@color/white"
+                        android:textSize="8dp"
+                        android:fontFamily="@font/arial_regular"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/jennifer_resume_expertise_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SKILLS"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="10sp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jennifer_resume_expertise_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/jennifer_resume_language_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LANGUAGES"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/arial_bold"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jennifer_resume_language_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/jennifer_resume_certifications_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CERTIFICATIONS"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/arial_bold"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jennifer_resume_certifications_recyclearview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/jennifer_resume_awards_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACHIVEMENTS"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/arial_bold"
+                    android:textSize="10sp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/jennifer_resume_awards_recyclearview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:id="@+id/jennifer_resume_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jennifer\nAnderson"
+                android:textSize="25sp"
+                android:fontFamily="@font/arial_bold"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/jennifer_resume_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programmer"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/arial_regular"
+                android:textColor="@color/black"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Me"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/arial_bold"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#8A8A8A"
+                android:layout_marginTop="2dp"
+                />
+
+            <TextView
+                android:id="@+id/jennifer_resume_profile_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_shadow"
+                android:textStyle="normal"
+                android:textSize="8sp"
+                android:justificationMode="inter_word"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/arial_regular"
+                android:layout_marginTop="5dp"
+                android:text=""/>
+
+
+            <TextView
+                android:id="@+id/jennifer_resume_workExperience_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXPERIENCE"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial_bold"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#8A8A8A"
+                android:layout_marginTop="2dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/jennifer_resume_workExperience_recyclearView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/jennifer_resume_education_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDUCATION"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial_bold"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#8A8A8A"
+                android:layout_marginTop="2dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/jennifer_resume_education_recyclearview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/jennifer_resume_project_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROJECTS"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/arial_bold"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#8A8A8A"
+                android:layout_marginTop="2dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/jennifer_resume_project_recyclearView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/jennifer_resume_extra_cirricular_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXTRA CURRICULAR ACTIVITIES"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial_bold"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#8A8A8A"
+                android:layout_marginTop="2dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/jennifer_resume_extra_cirricular_recyclearView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/jennifer_resume_references_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REFERENCES"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial_bold"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#8A8A8A"
+                android:layout_marginTop="2dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/jennifer_resume_references_recyclearView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

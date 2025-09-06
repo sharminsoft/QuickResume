@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="410dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:paddingEnd="12dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:background="@color/black"
+
+            >
+
+            <ImageView
+                android:id="@+id/lizzie_resume_profile_img"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/profile_png"
+                android:paddingTop="5dp"
+                android:scaleType="centerCrop"
+                android:background="#FF9100"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:text="CONTACT"
+                android:textColor="@color/white"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="12sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/white"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/lizzie_resume_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arial_regular"
+                        android:text="171/2, West Sherapara, Mirpur -1216"
+                        android:textColor="@color/white"
+                        android:textSize="6sp"
+                        android:layout_marginStart="3dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/white"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/lizzie_resume_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+8801798-487709"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/arial_regular"
+                        android:layout_marginStart="3dp"
+                        android:textSize="6sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/white"
+                        android:src="@drawable/ic_email" />
+
+                    <TextView
+                        android:id="@+id/lizzie_resume_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mahiuddin834@gmail.com"
+                        android:fontFamily="@font/arial_regular"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="3dp"
+                        android:textSize="6sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:padding="2dp"
+                        app:tint="@color/white"
+                        android:src="@drawable/web_ic" />
+
+                    <TextView
+                        android:id="@+id/lizzie_resume_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="www.website.com"
+                        android:fontFamily="@font/arial_regular"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="3dp"
+                        android:textSize="6sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lizzie_resume_expertise_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:fontFamily="@font/arial_regular"
+                android:text="SKILLS"
+                android:textColor="@color/white"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="12sp"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lizzie_resume_expertise_recyclearView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12sp"
+                />
+
+            <TextView
+                android:id="@+id/lizzie_resume_language_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:fontFamily="@font/arial_regular"
+                android:text="LANGUAGE"
+                android:textColor="@color/white"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="12sp"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lizzie_resume_language_recyclearView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12sp"
+                />
+
+            <TextView
+                android:id="@+id/lizzie_resume_certifications_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:text="CERTIFICATIONS"
+                android:textColor="@color/white"
+                android:fontFamily="@font/arial_regular"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="12sp"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lizzie_resume_certifications_recyclearview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12sp"
+                android:layout_marginBottom="20dp"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:background="#FFAB40"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/lizzie_resume_full_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="LIZZIE JOHAN"
+                        android:fontFamily="@font/arial_regular"
+                        android:textAlignment="textEnd"
+                        />
+                    <TextView
+                        android:id="@+id/lizzie_resume_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Graphic Designer"
+                        android:textColor="#8C8C8C"
+                        android:fontFamily="@font/arial_regular"
+                        android:textSize="16dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="3dp"
+                    android:background="#FFAB40"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20sp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT ME"
+                    android:fontFamily="@font/arial_regular"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/lizzie_resume_profile_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:textAlignment="viewStart"
+                    android:textSize="6sp"
+                    android:fontFamily="@font/arial_regular"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="5dp"
+                    android:text=""
+                    />
+
+                <TextView
+                    android:id="@+id/lizzie_resume_work_experience_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXPERIENCE"
+                    android:fontFamily="@font/arial_regular"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lizzie_resume_workExperience_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/lizzie_resume_education_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EDUCATION"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/arial_regular"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lizzie_resume_education_recyclearview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/lizzie_resume_project_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROJECTS"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/arial_regular"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lizzie_resume_project_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/lizzie_resume_extra_curricular_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACTIVITIES"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/arial_regular"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lizzie_resume_extra_curricular_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/lizzie_resume_awards_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACHIVEMENTS"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/arial_regular"
+                    android:textColor="@color/black"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lizzie_resume_awards_recyclearview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <TextView
+                    android:id="@+id/lizzie_resume_references_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REFERENCES"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/arial_regular"
+                    android:textColor="@color/black"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lizzie_resume_references_recyclearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="20dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

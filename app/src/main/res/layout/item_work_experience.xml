@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="@font/arial_regular"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_job_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text=""
+            android:fontFamily="@font/arial_regular"
+            android:textColor="@color/black_shadow"
+            android:textStyle="normal"
+            android:textSize="7sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black_shadow"
+        android:fontFamily="@font/arial_regular"
+        android:textSize="7sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_job_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:fontFamily="@font/arial_regular"
+        android:textColor="@color/black_shadow"
+        android:textStyle="normal"
+        android:textSize="7sp" />
+</LinearLayout>

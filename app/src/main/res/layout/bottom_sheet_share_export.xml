@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="7dp"
+        android:layout_gravity="center"
+        android:background="@drawable/curve_bg"
+        android:backgroundTint="#E9E9E9"
+
+        />
+
+    <!-- Share Option -->
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:textColor="@android:color/black" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginVertical="8dp" />
+
+    <!-- Export Option -->
+    <TextView
+        android:id="@+id/tv_export"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export as PDF"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:textColor="@android:color/black" />
+</LinearLayout>

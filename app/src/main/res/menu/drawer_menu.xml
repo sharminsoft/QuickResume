@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_drawer_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_drawer_resume_profiles"
+            android:icon="@drawable/resume_profiles"
+            android:title="Resume Profiles" />
+
+        <item
+            android:id="@+id/nav_drawer_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Support">
+        <menu>
+            <item
+                android:id="@+id/nav_drawer_help"
+                android:icon="@drawable/help"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/nav_drawer_about"
+                android:icon="@drawable/about_us"
+                android:title="About Us" />
+
+            <item
+                android:id="@+id/nav_drawer_logout"
+                android:icon="@drawable/round_logout_24"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>
