@@ -1,44 +1,26 @@
 {
   "project_info": {
-    "project_number": "405322251121",
-    "project_id": "quickresume-30809",
-    "storage_bucket": "quickresume-30809.firebasestorage.app"
+    "project_number": "854380948474",
+    "project_id": "quick-resume-fda2f",
+    "storage_bucket": "quick-resume-fda2f.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:405322251121:android:536b8640393f129cebd4d0",
+        "mobilesdk_app_id": "1:854380948474:android:6de7aa800f3813dca39243",
         "android_client_info": {
           "package_name": "com.suitexen.quickresume"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "405322251121-lab4kcj7cqs594kkqmq5aesghmdjgo96.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.suitexen.quickresume",
-            "certificate_hash": "0678b71bafe2b55444835ac9008b64b691cb7c66"
-          }
-        },
-        {
-          "client_id": "405322251121-r3rgj2sbmk8ubj74flqlpdc9jhdhoe13.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDMMuflaBXp6LOrwx6kur4XtWBGSsL2xu0"
+          "current_key": "AIzaSyCtaniOYbkgW2jVkKJkOaOVuGTECd4gx4E"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "405322251121-r3rgj2sbmk8ubj74flqlpdc9jhdhoe13.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

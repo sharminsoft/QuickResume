@@ -302,53 +302,63 @@ public class LoginActivity extends AppCompatActivity {
                         DocumentSnapshot document = task.getResult();
 
                         if (!document.exists()) {
-                            Log.d(TAG, "Creating new user document");
+                            // নতুন user - SignupActivity এর মতো registration করুন
+                            Log.d(TAG, "New user detected - Creating registration");
                             updateProgressDialog("Creating your profile...");
                             createNewUserDocument(userId, userName, userEmail, photoUrl);
                         } else {
-                            Log.d(TAG, "User document already exists");
+                            // পুরাতন user - সরাসরি login
+                            Log.d(TAG, "Existing user - Logging in directly");
                             updateProgressDialog("Completing sign-in...");
-                            // Add small delay for smooth UX
+
+                            // Smooth UX এর জন্য small delay
                             new android.os.Handler().postDelayed(() -> {
                                 hideProgressDialog();
+                                Toast.makeText(this, "Welcome back, " + userName + "!", Toast.LENGTH_SHORT).show();
                                 navigateToMainActivity(userName);
                             }, 500);
                         }
                     } else {
                         Log.e(TAG, "Error checking user document", task.getException());
                         hideProgressDialog();
-                        // Still navigate to main activity
+
+                        // Error হলেও login করতে দিন
+                        Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show();
                         navigateToMainActivity(userName);
                     }
                 });
     }
 
     private void createNewUserDocument(String userId, String userName, String userEmail, String photoUrl) {
-        // Create user data using Map for better reliability
+        // SignupActivity এর exact same structure follow করা হচ্ছে
         Map<String, Object> userData = new HashMap<>();
         userData.put("userId", userId);
         userData.put("name", userName);
         userData.put("email", userEmail);
-        userData.put("password", ""); // Empty for Google sign-in users
+        userData.put("password", ""); // Google sign-in users এর জন্য empty
         userData.put("phone", "");
         userData.put("photoUrl", photoUrl);
         userData.put("provider", "google");
         userData.put("createdAt", System.currentTimeMillis());
         userData.put("isActive", true);
 
-        Log.d(TAG, "Creating user document with data: " + userData.toString());
+        Log.d(TAG, "Creating new user document with data: " + userData.toString());
 
         firestore.collection("Users").document(userId)
                 .set(userData)
                 .addOnSuccessListener(aVoid -> {
                     Log.d(TAG, "User document created successfully");
                     hideProgressDialog();
-                    Toast.makeText(this, "Welcome " + userName + "!", Toast.LENGTH_SHORT).show();
+
+                    // নতুন user এর জন্য welcome message
+                    Toast.makeText(this, "Welcome " + userName + "! Your account has been created.", Toast.LENGTH_LONG).show();
                     navigateToMainActivity(userName);
                 })
                 .addOnFailureListener(e -> {
                     Log.e(TAG, "Failed to create user document", e);
                     hideProgressDialog();
+
+                    // Firestore error হলেও login করতে দিন
                     Toast.makeText(this, "Profile creation failed, but login successful", Toast.LENGTH_SHORT).show();
                     navigateToMainActivity(userName);
                 });
@@ -384,7 +394,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private void navigateToMainActivity(String userName) {
         Log.d(TAG, "Navigating to MainActivity");
-        Toast.makeText(this, "Welcome back!", Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         intent.putExtra("userName", userName);
